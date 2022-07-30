@@ -1,0 +1,58 @@
+.bg-dark{
+  background-color: $primaryColor !important;
+}
+.navbarContainer{
+  .navbar-brand{
+    color: $primaryText;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    &:hover{
+      color: $secondaryColor;
+    }
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .nav-link{
+    color: $primaryText;
+    margin-top: 1rem;
+    font-weight: 400;
+    &:hover{
+      color: $secondaryColor;
+    }
+  }
+  
+  .navbarFlex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("./img/hamburgerMenuIcon.png");
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .navbarContainer{
+    .nav-link{
+      margin-top: 0;
+      margin-right: 2.5rem;
+    }
+  } 
+
+  .me-auto{
+    width: 100%;
+    .navbarFlex{
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+}

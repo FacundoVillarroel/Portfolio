@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Navbar from "./components/navbar/Navbar"
+import Navbar from "./components/navbarContainer/NavbarContainer"
 import Landing from "./components/landing/Landing"
 import AboutMe from "./components/aboutMe/AboutMe"
 import Projects from "./components/projects/Projects"

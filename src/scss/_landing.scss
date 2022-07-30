@@ -1,0 +1,25 @@
+.landingContainer{
+
+  .videoContainer{
+    opacity: 1;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .textContainer{
+    z-index: 100000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    h1, h4{
+      z-index: inherit;
+    }
+  }
+}

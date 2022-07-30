@@ -1,15 +1,4 @@
 @import "variables";
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-.main{
-  background-color: $primaryColor;
-  color: $primaryText;
-}
+@import "structure";
+@import "navbar";
+@import "landing";
