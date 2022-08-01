@@ -34,6 +34,9 @@ html {
   .navbarContainer .nav-link:hover {
     color: #00adb5; }
 
+.navbarContainer .nav-link.active {
+  color: #00adb5; }
+
 .navbarContainer .navbarFlex {
   display: flex;
   flex-direction: column;
@@ -73,3 +76,76 @@ html {
   -webkit-box-align: center; }
   .landingContainer .textContainer h1, .landingContainer .textContainer h4 {
     z-index: inherit; }
+
+.aboutMeContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "descriptionContainer"  "imgProfileContainer";
+  row-gap: 2rem;
+  margin-bottom: 5rem; }
+  .aboutMeContainer .imgProfileContainer {
+    grid-area: imgProfileContainer;
+    display: flex;
+    justify-content: center; }
+    .aboutMeContainer .imgProfileContainer .imgProfile {
+      max-width: 85%;
+      border-radius: 5%; }
+  .aboutMeContainer .descriptionContainer {
+    grid-area: descriptionContainer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    .aboutMeContainer .descriptionContainer h1 {
+      font-size: 3.5rem;
+      color: #ff5722; }
+    .aboutMeContainer .descriptionContainer p {
+      font-size: 1.5rem; }
+
+@media only screen and (min-width: 768px) {
+  .aboutMeContainer {
+    margin-top: 10rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imgProfileContainer descriptionContainer"; }
+    .aboutMeContainer .imgProfileContainer {
+      grid-area: imgProfileContainer; }
+      .aboutMeContainer .imgProfileContainer .imgProfile {
+        max-width: 80%;
+        margin-left: 10rem; }
+    .aboutMeContainer .descriptionContainer {
+      grid-area: descriptionContainer;
+      padding-right: 20rem; }
+      .aboutMeContainer .descriptionContainer h1 {
+        font-size: 5rem; }
+      .aboutMeContainer .descriptionContainer p {
+        font-size: 2rem; } }
+
+/* .aboutMeContainer{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  .imgProfileContainer{
+    width: 50%;
+  }
+  .imgProfile{
+    max-width: 80%;
+    border-radius: 5%;
+  }
+
+  .descriptionContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+    h1{
+      font-size: 5rem;
+      color:$fourthColor;
+    }
+  }
+}  
+ */
