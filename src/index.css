@@ -16,36 +16,46 @@ html {
 .bg-dark {
   background-color: #303841 !important; }
 
-.navbarContainer .navbar-brand {
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-  padding-top: 1rem;
-  margin-bottom: 1rem; }
-  .navbarContainer .navbar-brand:hover {
+.navbarContainer {
+  z-index: 100; }
+  .navbarContainer .navbar-brand {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    margin-bottom: 1rem; }
+    .navbarContainer .navbar-brand:hover {
+      color: #00adb5; }
+  .navbarContainer .nav-link {
+    color: #ffffff;
+    margin-top: 1rem;
+    font-weight: 400; }
+    .navbarContainer .nav-link:hover {
+      color: #00adb5; }
+  .navbarContainer .nav-link.active {
     color: #00adb5; }
-
-.navbarContainer .nav-link {
-  color: #ffffff;
-  margin-top: 1rem;
-  font-weight: 400; }
-  .navbarContainer .nav-link:hover {
-    color: #00adb5; }
-
-.navbarContainer .nav-link.active {
-  color: #00adb5; }
-
-.navbarContainer .navbarFlex {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center; }
-
-.navbarContainer .navbar-toggler-icon {
-  background-image: url("./img/hamburgerMenuIcon.png");
-  background-size: cover; }
+  .navbarContainer .navbarFlex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+  .navbarContainer .navbar-toggler-icon {
+    background-image: url("./img/hamburgerMenuIcon.png");
+    background-size: cover; }
+  .navbarContainer .progressWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; }
+  .navbarContainer .progressBarUnder {
+    position: absolute;
+    top: 5.7rem;
+    left: 0;
+    width: 100%;
+    height: .4rem;
+    background-color: #ff5722; }
 
 @media only screen and (min-width: 768px) {
   .navbarContainer .nav-link {
@@ -57,25 +67,28 @@ html {
       flex-direction: row;
       justify-content: flex-end; } }
 
-.landingContainer .videoContainer {
-  opacity: 1;
-  inset: 0;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  overflow: hidden; }
+.landingContainer {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./img/landingImg.jpg");
+  background-size: cover;
+  background-position-y: top;
+  background-position-x: center; }
+  .landingContainer .textContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .landingContainer .textContainer h1 {
+      font-size: 3rem; }
+    .landingContainer .textContainer h4 {
+      font-size: 1.5rem; }
 
-.landingContainer .textContainer {
-  z-index: 100000;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-align: center; }
-  .landingContainer .textContainer h1, .landingContainer .textContainer h4 {
-    z-index: inherit; }
+@media only screen and (min-width: 768px) {
+  .landingContainer .textContainer h1 {
+    font-size: 5rem; }
+  .landingContainer .textContainer h4 {
+    font-size: 2rem; } }
 
 .aboutMeContainer {
   display: grid;

@@ -21,6 +21,9 @@ const NavbarContainer = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
+        <div className="progressWrapper">
+          <div className="progressBarUnder"></div>
+        </div>
       </Navbar>
     </div>
   )
