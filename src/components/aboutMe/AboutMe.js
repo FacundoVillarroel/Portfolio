@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className='aboutMeContainer'>
       <div className='imgProfileContainer'>
-        <img src={programmingImg} className="imgProfile"></img>
+        <img src={programmingImg} className="imgProfile" alt='profile'></img>
       </div>
       <div className='descriptionContainer'>
         <h1> About Me </h1>

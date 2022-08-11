@@ -1,0 +1,28 @@
+.footerContainer{
+  padding: 3rem;
+  background-image: radial-gradient($primaryColor,#212121);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1{
+    color: $secondaryColor;
+    font-size: 3rem;
+  }
+
+  .networksContainer{
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .networkContainer{
+      margin: 1rem;
+    }
+  }
+  .copyrights{
+    display: flex;
+    span{
+      font-size: 1.2rem;
+    }
+  }
+}
