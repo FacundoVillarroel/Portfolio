@@ -3,18 +3,21 @@ import {BsGithub, BsLinkedin} from "react-icons/bs";
 import {SiGmail} from "react-icons/si";
 
 const Footer = () => {
+
+  const width=  window.screen.width;
+
   return (
     <div className='footerContainer'>
       <h1>My Networks</h1>
       <div className='networksContainer'>
         <a href='https://github.com/FacundoVillarroel' className='networkContainer'>
-          <BsGithub color='#ff5722' fontSize={40}/>
+          <BsGithub color='#ff5722' fontSize={width <= 768 ? 40 : 60}/>
         </a>
         <a href='https://www.linkedin.com/in/facundo-villarroel-391a26236/' className='networkContainer'>
-          <BsLinkedin color='#ff5722' fontSize={40}/>
+          <BsLinkedin color='#ff5722' fontSize={width <= 768 ? 40 : 60}/>
         </a>
         <a href='mailto:facu.villarroel96@gmail.com' className='networkContainer'>
-          <SiGmail color='#ff5722' fontSize={40}/>
+          <SiGmail color='#ff5722' fontSize={width <= 768 ? 40 : 60}/>
         </a>
       </div>
       <div className='copyrights'>

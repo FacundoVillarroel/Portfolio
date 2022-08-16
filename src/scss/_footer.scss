@@ -16,13 +16,34 @@
     display: flex;
     justify-content: center;
     .networkContainer{
-      margin: 1rem;
+      margin: 1.5rem;
     }
   }
   .copyrights{
     display: flex;
     span{
       font-size: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footerContainer{
+    .networksContainer{
+      .networkContainer{
+        position: relative;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        svg{
+          border-radius: 50%;
+        }
+        &:hover{
+          svg{
+            border: .2rem dotted $secondaryColor;
+            
+          }
+        }
+      }
     }
   }
 }

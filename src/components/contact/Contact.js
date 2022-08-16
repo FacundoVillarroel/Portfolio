@@ -31,7 +31,7 @@ const Contact = () => {
         <img src={mailbox} alt="mailbox"/>
       </div>
       <div className='form'>
-        <label> NAME </label>
+        <label> NAME: </label>
         <input 
           type="text" 
           name='name'
@@ -39,7 +39,7 @@ const Contact = () => {
           onChange={handleInputChange}
           required
         />
-        <label> EMAIL </label>
+        <label> EMAIL: </label>
         <input 
           type="email"
           name="email"
@@ -47,7 +47,7 @@ const Contact = () => {
           onChange={handleInputChange}
           required
         />
-        <label> MESSAGE </label>
+        <label> MESSAGE: </label>
         <textarea 
           type="textarea"
           name='message'
