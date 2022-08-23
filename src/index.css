@@ -49,13 +49,21 @@ html {
     top: 0;
     left: 0;
     width: 100%; }
+  .navbarContainer .progressBar {
+    position: absolute;
+    top: 5.7rem;
+    left: 0;
+    width: 100%;
+    height: .4rem;
+    z-index: 10000;
+    background-color: #ff5722; }
   .navbarContainer .progressBarUnder {
     position: absolute;
     top: 5.7rem;
     left: 0;
     width: 100%;
     height: .4rem;
-    background-color: #ff5722; }
+    background-color: rgba(255, 87, 34, 0.5); }
 
 @media only screen and (min-width: 768px) {
   .navbarContainer .nav-link {
@@ -90,6 +98,9 @@ html {
   .landingContainer .textContainer h4 {
     font-size: 2rem; } }
 
+#aboutMe {
+  padding-top: 7rem; }
+
 .aboutMeContainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -112,7 +123,7 @@ html {
     align-items: flex-start;
     padding-left: 3rem;
     padding-right: 3rem; }
-    .aboutMeContainer .descriptionContainer h1 {
+    .aboutMeContainer .descriptionContainer h2 {
       font-size: 3.5rem;
       color: #ff5722; }
     .aboutMeContainer .descriptionContainer p {
@@ -120,7 +131,6 @@ html {
 
 @media only screen and (min-width: 768px) {
   .aboutMeContainer {
-    margin-top: 10rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "imgProfileContainer descriptionContainer"; }
@@ -132,7 +142,7 @@ html {
     .aboutMeContainer .descriptionContainer {
       grid-area: descriptionContainer;
       padding-right: 20rem; }
-      .aboutMeContainer .descriptionContainer h1 {
+      .aboutMeContainer .descriptionContainer h2 {
         font-size: 5rem; }
       .aboutMeContainer .descriptionContainer p {
         font-size: 2rem; } }
@@ -162,52 +172,97 @@ html {
   }
 }  
  */
-.contactContainer {
-  margin-top: 3rem;
+#skills {
+  padding-top: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .contactContainer .mailbox {
-    margin-bottom: 5rem; }
-  .contactContainer .form {
+  #skills h2 {
+    font-size: 3.5rem;
+    color: #ff5722; }
+  #skills .skillsContainer {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem; }
-    .contactContainer .form input {
-      border: 0.3rem solid #00adb5;
-      border-radius: 1rem;
-      margin-top: .5rem;
-      margin-bottom: 3rem; }
-    .contactContainer .form textarea {
-      border: 0.3rem solid #00adb5;
-      border-radius: 1rem;
-      resize: none;
-      margin-top: .5rem;
-      margin-bottom: 2rem; }
-    .contactContainer .form .buttonSubmit {
-      background-color: #ff5722;
-      border-color: #ff5722;
-      color: #eeeeee;
-      border-radius: 1rem;
-      margin: 2rem;
-      padding: 1rem; }
-      .contactContainer .form .buttonSubmit:hover {
-        background-color: #eeeeee;
-        border-color: #eeeeee;
-        color: #ff5722; }
+    flex-wrap: wrap;
+    justify-content: center; }
+    #skills .skillsContainer .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 3.5rem 2rem; }
+      #skills .skillsContainer .skill p {
+        font-weight: 500; }
+      #skills .skillsContainer .skill img {
+        margin-top: 1rem;
+        width: 8rem;
+        height: 8rem; }
 
 @media only screen and (min-width: 768px) {
-  .contactContainer {
+  #skills h2 {
+    font-size: 5rem; }
+  #skills .skillsContainer {
+    margin: 1rem 10rem; }
+    #skills .skillsContainer .skill {
+      margin: 4rem; }
+      #skills .skillsContainer .skill img {
+        margin-top: 1rem;
+        width: 12rem;
+        height: 10rem; } }
+
+#contact {
+  padding-top: 8rem; }
+  #contact h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #ff5722; }
+  #contact .contactContainer {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #contact .contactContainer .mailbox {
+      margin-bottom: 5rem; }
+    #contact .contactContainer .form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3rem; }
+      #contact .contactContainer .form input {
+        border: 0.3rem solid #00adb5;
+        border-radius: 1rem;
+        margin-top: .5rem;
+        margin-bottom: 3rem; }
+      #contact .contactContainer .form textarea {
+        border: 0.3rem solid #00adb5;
+        border-radius: 1rem;
+        resize: none;
+        margin-top: .5rem;
+        margin-bottom: 2rem; }
+      #contact .contactContainer .form .buttonSubmit {
+        background-color: #ff5722;
+        border-color: #ff5722;
+        color: #eeeeee;
+        border-radius: 1rem;
+        margin: 2rem;
+        padding: 1rem; }
+        #contact .contactContainer .form .buttonSubmit:hover {
+          background-color: #eeeeee;
+          border-color: #eeeeee;
+          color: #ff5722; }
+
+@media only screen and (min-width: 768px) {
+  #contact h2 {
+    font-size: 5rem; }
+  #contact .contactContainer {
     flex-direction: row;
-    justify-content: center; }
-    .contactContainer .form {
+    justify-content: center;
+    padding-bottom: 4rem; }
+    #contact .contactContainer .form {
       margin-left: 15rem; }
-      .contactContainer .form input {
+      #contact .contactContainer .form input {
         width: 130%; }
-      .contactContainer .form textarea {
+      #contact .contactContainer .form textarea {
         width: 130%;
         height: 15rem; }
-      .contactContainer .form .buttonSubmit {
+      #contact .contactContainer .form .buttonSubmit {
         width: 130%;
         margin: unset;
         margin-top: 2rem;

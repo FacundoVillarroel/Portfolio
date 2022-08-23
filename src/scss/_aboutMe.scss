@@ -1,3 +1,7 @@
+#aboutMe{
+  padding-top: 7rem;
+}
+
 .aboutMeContainer{
   display: grid;
   grid-template-columns: 1fr;
@@ -23,7 +27,7 @@
     align-items: flex-start;
     padding-left: 3rem;
     padding-right: 3rem;
-    h1{
+    h2{
       font-size: 3.5rem;
       color:$fourthColor;
     }
@@ -35,7 +39,6 @@
 
 @media only screen and (min-width: 768px){
   .aboutMeContainer{
-    margin-top: 10rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "imgProfileContainer descriptionContainer";
@@ -49,7 +52,7 @@
     .descriptionContainer{
       grid-area: descriptionContainer;
       padding-right: 20rem;
-      h1{
+      h2{
         font-size: 5rem;
       }
       p{

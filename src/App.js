@@ -4,7 +4,7 @@ import Navbar from "./components/navbarContainer/NavbarContainer"
 import Landing from "./components/landing/Landing"
 import AboutMe from "./components/aboutMe/AboutMe"
 import Projects from "./components/projects/Projects"
-import Tecnologies from "./components/tecnologies/Tecnologies"
+import SkillsContainer from "./components/tecnologies/SkillsContainer"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
 
@@ -18,7 +18,7 @@ function App() {
       <Landing/>
       <AboutMe/>
       <Projects/>
-      <Tecnologies/>
+      <SkillsContainer/>
       <Contact/>
       <Footer/>
     </div>

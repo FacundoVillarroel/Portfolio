@@ -26,38 +26,41 @@ const Contact = () => {
   }
 
   return (
-    <div className='contactContainer'>
-      <div className='mailbox'>
-        <img src={mailbox} alt="mailbox"/>
-      </div>
-      <div className='form'>
-        <label> NAME: </label>
-        <input 
-          type="text" 
-          name='name'
-          value={values.name}
-          onChange={handleInputChange}
-          required
-        />
-        <label> EMAIL: </label>
-        <input 
-          type="email"
-          name="email"
-          value={values.email}
-          onChange={handleInputChange}
-          required
-        />
-        <label> MESSAGE: </label>
-        <textarea 
-          type="textarea"
-          name='message'
-          value={values.message}
-          onChange={handleInputChange}
-          required
-        />
-        <button type='submit' className='buttonSubmit' onClick={handleSubmit}>
-          Send Message
-        </button>
+    <div id='contact'>
+      <h2>Contact</h2>
+      <div className='contactContainer' >
+        <div className='mailbox'>
+          <img src={mailbox} alt="mailbox"/>
+        </div>
+        <div className='form'>
+          <label> NAME: </label>
+          <input 
+            type="text" 
+            name='name'
+            value={values.name}
+            onChange={handleInputChange}
+            required
+          />
+          <label> EMAIL: </label>
+          <input 
+            type="email"
+            name="email"
+            value={values.email}
+            onChange={handleInputChange}
+            required
+          />
+          <label> MESSAGE: </label>
+          <textarea 
+            type="textarea"
+            name='message'
+            value={values.message}
+            onChange={handleInputChange}
+            required
+          />
+          <button type='submit' className='buttonSubmit' onClick={handleSubmit}>
+            Send Message
+          </button>
+        </div>
       </div>
     </div>
   )
