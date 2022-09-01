@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/navbarContainer/NavbarContainer"
 import Landing from "./components/landing/Landing"
 import AboutMe from "./components/aboutMe/AboutMe"
-import Projects from "./components/projects/Projects"
+import ProjectsContainer from "./components/projects/ProjectsContainer"
 import SkillsContainer from "./components/tecnologies/SkillsContainer"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
@@ -17,7 +17,7 @@ function App() {
       <Navbar/>
       <Landing/>
       <AboutMe/>
-      <Projects/>
+      <ProjectsContainer/>
       <SkillsContainer/>
       <Contact/>
       <Footer/>

@@ -208,6 +208,37 @@ html {
         width: 12rem;
         height: 10rem; } }
 
+#projects {
+  padding-top: 7rem; }
+  #projects h2 {
+    font-size: 3.5rem;
+    color: #ff5722;
+    text-align: center;
+    margin-bottom: 2rem; }
+  #projects .projectsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    #projects .projectsContainer .projectWrapper {
+      padding-top: 2.5rem; }
+      #projects .projectsContainer .projectWrapper .projectTitle {
+        text-align: center; }
+        #projects .projectsContainer .projectWrapper .projectTitle:hover {
+          color: #00adb5; }
+      #projects .projectsContainer .projectWrapper .project {
+        width: 32rem;
+        height: 15rem;
+        background-color: red;
+        margin: 2rem 1rem; }
+
+@media only screen and (min-width: 768px) {
+  #projects h2 {
+    font-size: 5rem;
+    margin-bottom: 4rem; }
+  #projects .projectsContainer .projectWrapper .project {
+    width: 50rem;
+    height: 20rem; } }
+
 #contact {
   padding-top: 8rem; }
   #contact h2 {
